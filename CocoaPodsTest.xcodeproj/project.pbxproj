@@ -17,6 +17,7 @@
 		53135EF9216E4B1D00D04216 /* CocoaPodsTestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 53135EF8216E4B1D00D04216 /* CocoaPodsTestTests.m */; };
 		53135F04216E4B1D00D04216 /* CocoaPodsTestUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 53135F03216E4B1D00D04216 /* CocoaPodsTestUITests.m */; };
 		53135F12216E4BD800D04216 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 53135F11216E4BD700D04216 /* Podfile */; };
+		53135F49216F2F2200D04216 /* LFBaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 53135F43216F2F2200D04216 /* LFBaseModel.m */; };
 		759E6FD2B5634AFC36A6C8F5 /* libPods-CocoaPodsTestTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9832E3A9417CE23281DAE789 /* libPods-CocoaPodsTestTests.a */; };
 		E9E9A36265122373BAF42B5B /* libPods-CocoaPodsTestUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5365640DAD0167E8BA5FE929 /* libPods-CocoaPodsTestUITests.a */; };
 /* End PBXBuildFile section */
@@ -59,6 +60,9 @@
 		53135F03216E4B1D00D04216 /* CocoaPodsTestUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CocoaPodsTestUITests.m; sourceTree = "<group>"; };
 		53135F05216E4B1D00D04216 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		53135F11216E4BD700D04216 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		53135F3A216F2F2200D04216 /* LFBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LFBase.h; sourceTree = "<group>"; };
+		53135F42216F2F2200D04216 /* LFBaseModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LFBaseModel.h; sourceTree = "<group>"; };
+		53135F43216F2F2200D04216 /* LFBaseModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LFBaseModel.m; sourceTree = "<group>"; };
 		5365640DAD0167E8BA5FE929 /* libPods-CocoaPodsTestUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CocoaPodsTestUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		66FF5EC08A135FA4E98D4F2D /* libPods-CocoaPodsTest.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CocoaPodsTest.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		800F28080FD05DEDFEFB3777 /* Pods-CocoaPodsTestUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CocoaPodsTestUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CocoaPodsTestUITests/Pods-CocoaPodsTestUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -99,6 +103,7 @@
 			isa = PBXGroup;
 			children = (
 				53135F11216E4BD700D04216 /* Podfile */,
+				53135F38216F2F2200D04216 /* Classes */,
 				53135EDE216E4B1D00D04216 /* CocoaPodsTest */,
 				53135EF7216E4B1D00D04216 /* CocoaPodsTestTests */,
 				53135F02216E4B1D00D04216 /* CocoaPodsTestUITests */,
@@ -150,6 +155,32 @@
 				53135F05216E4B1D00D04216 /* Info.plist */,
 			);
 			path = CocoaPodsTestUITests;
+			sourceTree = "<group>";
+		};
+		53135F38216F2F2200D04216 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				53135F39216F2F2200D04216 /* LFBase */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		53135F39216F2F2200D04216 /* LFBase */ = {
+			isa = PBXGroup;
+			children = (
+				53135F3A216F2F2200D04216 /* LFBase.h */,
+				53135F41216F2F2200D04216 /* LFBaseModel */,
+			);
+			path = LFBase;
+			sourceTree = "<group>";
+		};
+		53135F41216F2F2200D04216 /* LFBaseModel */ = {
+			isa = PBXGroup;
+			children = (
+				53135F42216F2F2200D04216 /* LFBaseModel.h */,
+				53135F43216F2F2200D04216 /* LFBaseModel.m */,
+			);
+			path = LFBaseModel;
 			sourceTree = "<group>";
 		};
 		8C274F9C77322BC07E9E0219 /* Pods */ = {
@@ -467,6 +498,7 @@
 			files = (
 				53135EE4216E4B1D00D04216 /* ViewController.m in Sources */,
 				53135EEF216E4B1D00D04216 /* main.m in Sources */,
+				53135F49216F2F2200D04216 /* LFBaseModel.m in Sources */,
 				53135EE1216E4B1D00D04216 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
